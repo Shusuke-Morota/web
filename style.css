@@ -26,7 +26,7 @@ a:hover {
 }
 
 /* ナビゲーションメニュー */
-ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     color: #666666;
@@ -36,7 +36,7 @@ ul {
 }
 
 /* :not(:last-child)と指定することで最後以外要素が適用される */
-li:not(:last-child) {
+nav li:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -107,6 +107,33 @@ h2 {
     text-align: center;
 }
 
+/* サブメニュー：注目記事メニュー */
+.topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.topics a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topics figure {
+    width: 100px;
+    flex: none;
+}
+
+.topics img {
+    vertical-align: bottom;
+}
+
+.topics h3 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
 
 /* 「フッター」ブロック */
 footer {
