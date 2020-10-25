@@ -148,6 +148,67 @@ footer {
 	font-family: 'Exo 2', sans-serif;
 }
 
+/* トップページ：ヒーローイメージ */
+.hero {
+    background-image: url(img/walk.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 532px;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #444444;
+    text-align: center;
+}
+
+.hero p {
+    font-weight: bold;
+    text-shadow: 0 0 10px #444444;
+    margin-top: 0;
+}
+
+.hero a {
+    border: solid 2px #ffffff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: rgba(41, 171, 226, 0.7);
+}
+
+/* トップページ：記事一覧 */
+.toppost {
+    padding: 15px;
+}
+
+.toppost div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toppost article {
+    padding: 0;
+    width: 48%;
+    flex: none;
+}
+
+.toppost article:not(:nth-last-child(-n+2)){
+    margin-bottom: 12px;
+}
+
+.toppost h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
 /* ============================== PC版 ================================= */
 
 @media(min-width: 600px){
@@ -157,6 +218,20 @@ footer {
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* PC版：トップページ：ヒーロイメージ */
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    /* PC版：トップページ：記事一覧 */
+    .toppost article {
+        width: 23%;
+    }
+
+    .toppost article:not(:nth-last-child(-n+2)){
+        margin-bottom: 0;
     }
     
     /* PC版：「ヘッダー」ブロック内のコンテナ */
@@ -180,9 +255,9 @@ footer {
     }
 }
 
-/* ============================== PC版(大)：の設定ここまで ================================= */
-
 /* ============================== PC版：の設定ここまで ================================= */
+
+/* ============================== PC版(大)：の設定ここまで ================================= */
 
 
 @media (min-width: 1025px){
